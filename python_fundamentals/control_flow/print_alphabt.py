@@ -1,2 +1,4 @@
 #!/usr/bin/env python3
-print("abcdfghijklmnoprstuvwxyz")
+for char in "abcdefghijklmnopqrstuvwxyz":
+    if char != 'e' and char != 'q':
+        print("{}".format(char), end="")
