@@ -2,9 +2,10 @@
 def pow(a, b):
     """Raise a to the power of b"""
     result = a
-    for num in range(abs(b - 1)):
-        if b > 0:
-            result *= a
-        else:
-            result /= a
+    for num in range(1, abs(b)):
+        result *= a
+    if b < 0:
+        return 1 / result
     return result
+
+print(pow(-98, -10))
