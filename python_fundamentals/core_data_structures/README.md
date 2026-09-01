@@ -11,3 +11,5 @@ add_tuple - Adds two tuple together
 common_elements - Returns a set of common elements in two set
 
 update_dictionary - Replaces or adds a keu/value pair in a dictionary
+
+best_score - Returns the key with the biggest value
