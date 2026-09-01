@@ -7,5 +7,3 @@ def pow(a, b):
     if b < 0:
         return 1 / result
     return result
-
-print(pow(-98, -10))
