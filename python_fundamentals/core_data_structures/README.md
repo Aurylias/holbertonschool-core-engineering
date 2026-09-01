@@ -9,3 +9,5 @@ print_matrix_integer - Print a matrix in a table format
 add_tuple - Adds two tuple together
 
 common_elements - Returns a set of common elements in two set
+
+update_dictionary - Replaces or adds a keu/value pair in a dictionary
