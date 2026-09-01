@@ -7,3 +7,5 @@ replace_in_list - Replaces an element of a list at a specific position
 print_matrix_integer - Print a matrix in a table format
 
 add_tuple - Adds two tuple together
+
+common_elements - Returns a set of common elements in two set
