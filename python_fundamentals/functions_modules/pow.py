@@ -4,9 +4,7 @@ def pow(a, b):
     result = a
     for num in range(abs(b - 1)):
         if b > 0:
-            print("in positive")
             result *= a
         else:
-            print("in negative")
             result /= a
     return result
