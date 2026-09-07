@@ -3,6 +3,6 @@ def safe_print_list(my_list=[], x=0):
     """Safely print a list"""
     try:
         for elem in range(x):
-            print(str(elem))
+            print(str(elem), end="")
     except:
         print("Given lenght is bigger than the len of the list")
