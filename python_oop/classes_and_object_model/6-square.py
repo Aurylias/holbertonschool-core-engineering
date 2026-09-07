@@ -15,7 +15,8 @@ class Square:
             position[1]
         except IndexError:
             position = (-1, -1)
-        if not isinstance(position[0], int) or not isinstance(position[1], int):
+        if not isinstance(position[0], int) or not isinstance(position[1],
+                                                              int):
             print("position must be a tuple of 2 positive integers")
         elif len(position) < 2 or (position[0] < 0 or position[1] < 0):
             print("position must be a tuple of 2 positive integers")
@@ -60,10 +61,8 @@ class Square:
     def my_print(self):
         """Print the square using #"""
         if self.size == 0:
-            print("", end="")
+            print("")
         else:
             print("\n" * self.__position[1], end='')
             for i in range(self.__size):
                 print(self.__position[0] * " " + self.size * "#")
-
-square = Square(3, (1,1))
