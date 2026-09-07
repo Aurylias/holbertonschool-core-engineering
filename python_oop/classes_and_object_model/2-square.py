@@ -5,7 +5,7 @@
 
 class Square:
     """Class for a square, do noting at the moment"""
-    def __init__(self, size):
+    def __init__(self, size=1):
         try:
             if isinstance(size, int):
                 self.__size = size
