@@ -12,7 +12,7 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         try:
-            print(position[1])
+            position[1]
         except IndexError:
             position = (position[0], 0)
         if not isinstance(position, tuple) or len(position) < 2 or \
@@ -64,3 +64,5 @@ class Square:
             print("\n" * self.__position[1], end='')
             for i in range(self.__size):
                 print(self.__position[0] * " " + self.size * "#")
+
+square = Square(3, (1,1))
