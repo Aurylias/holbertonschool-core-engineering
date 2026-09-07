@@ -6,10 +6,9 @@
 class Square:
     """Class for a square, do noting at the moment"""
     def __init__(self, size=0):
-        try:
-            if isinstance(size, int):
-                self.__size = size
-        except TypeError:
+        """Instantiation with a given size"""
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        except ValueError:
-            raise ValueError("size must >= 0")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
