@@ -7,7 +7,7 @@ class Square:
     """Class for a square, do noting at the moment"""
     def __init__(self, size):
         try:
-            if size.is_integer():
+            if isinstance(size, int):
                 self.__size = size
         except TypeError:
             raise TypeError("size must be an integer")
