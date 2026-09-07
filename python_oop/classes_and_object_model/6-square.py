@@ -9,8 +9,8 @@ class Square:
         """Instantiation with a given size"""
         if not isinstance(size, int) or not isinstance(position, tuple):
             raise TypeError("size must be an integer")
-        elif size < 0 or (len(position) < 2 and (position[0 < 1 or 
-                          position[1 < 1]])):
+        elif size < 0 or (len(position) < 2 and (position[0] < 0 or 
+                          position[1] < 0)):
             raise ValueError("size must be >= 0")
         self.__size = size
         self.__position = position
@@ -51,17 +51,13 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
+        """Print the square using #"""
         if self.size == 0:
-            print("")
+            print("", end="")
         else:
-            for i in range(self.size):
-                for k in range(self.__position[0] - 1):
-                        print(" ", end="")
-                for j in range(self.size):
-                    if j == (self.size - 1):
-                        print("#")
-                    else:
-                        print("#", end="")
+            print("\n" * self.__position[1], end='')
+            for i in range(self.__size):
+                print(self.__position[0] * " " + self.size * "#")
 
 square = Square(3, (4, 1))
 square.my_print()
