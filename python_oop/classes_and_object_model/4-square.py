@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Represents a square"""
+"""Module handling a square"""
 
 
 class Square:
@@ -13,10 +13,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
-    def area(self):
-        """Calculate the area of the square"""
-        return self.__size * self.__size
-
     @property
     def size(self):
         """Give access to the value of __size"""
@@ -27,6 +23,10 @@ class Square:
         """Set the __size to the given value"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
+    def area(self):
+        """Calculate the area of the square"""
+        return self.__size * self.__size
