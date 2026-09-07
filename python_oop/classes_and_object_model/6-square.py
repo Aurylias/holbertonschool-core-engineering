@@ -15,9 +15,10 @@ class Square:
             position[1]
         except IndexError:
             position = (-1, -1)
-        if isinstance(position[0], int) and isinstance(position[1], int):
-            if len(position) < 2 or (position[0] < 0 or position[1] < 0):
-                print("position must be a tuple of 2 positive integers")
+        if not isinstance(position[0], int) or not isinstance(position[1], int):
+            print("position must be a tuple of 2 positive integers")
+        elif len(position) < 2 or (position[0] < 0 or position[1] < 0):
+            print("position must be a tuple of 2 positive integers")
         self.__size = size
         self.__position = position
 
