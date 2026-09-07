@@ -41,6 +41,3 @@ class Square:
                         print("#")
                     else:
                         print("#", end="")
-
-square = Square(5)
-square.my_print()
