@@ -7,7 +7,6 @@ class BaseGeometry:
     
     def area(self):
         """Calculate the area of the geometric shapes"""
-        return self.__width * self.__height
 
     def integer_validator(self, name="", value=1):
         """Check if the value is an integer or not"""
