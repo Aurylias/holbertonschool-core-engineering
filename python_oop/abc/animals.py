@@ -7,14 +7,14 @@ class Animal(ABC):
     """Abstract class for animals"""
 
     @abstractmethod
-    def sound():
+    def sound(self):
         """Emit a sound"""
 
 
 class Dog(Animal):
     """Represent a dog"""
 
-    def sound():
+    def sound(self):
         """Make the dog bark"""
         return "Bark"
 
@@ -22,6 +22,6 @@ class Dog(Animal):
 class Cat(Animal):
     """Represent a cat"""
 
-    def sound():
+    def sound(self):
         """Make the cat meow"""
         return "Meow"
