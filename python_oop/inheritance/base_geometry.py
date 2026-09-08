@@ -4,15 +4,7 @@
 
 class BaseGeometry:
     """The base of geometric shapes"""
-    def __init__(self, sides=1, width=1, height=1):
-        """Constructor"""
-        if self.integer_validator("sides", sides):
-            self.__sides = sides
-        if self.integer_validator("width", width):
-            self.__width = width
-        if self.integer_validator("height", height):
-            self.__height = height
-
+    
     def area(self):
         """Calculate the area of the geometric shapes"""
         return self.__width * self.__height
