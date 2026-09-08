@@ -4,7 +4,7 @@
 
 class BaseGeometry:
     """The base of geometric shapes"""
-    def __init__(self, sides=0, width=0, height=0):
+    def __init__(self, sides=1, width=1, height=1):
         """Constructor"""
         if self.integer_validator("sides", sides):
             self.__sides = sides
