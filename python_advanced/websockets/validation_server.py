@@ -9,7 +9,7 @@ from websockets.exceptions import ConnectionClosed
 async def echo(websocket):
     try:
         async for message in websocket:
-            if message.isspace():
+            if message.isspace() or message == "":
                 await websocket.send('ERR:EMPTY')
             else:
                 await websocket.send(f'OK:{message}')
